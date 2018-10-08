@@ -13,7 +13,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    axios.get('/api/images')
+    axios.get('https://techkid-hotgirl-backend.herokuapp.com/api/images')
       .then(data => {
         console.log(data.data);
         this.setState({images:data.data});
